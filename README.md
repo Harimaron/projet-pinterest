@@ -10,6 +10,9 @@
 #### Objectifs :
 1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
 2. ...
+#### Objectifs réalisés :
+1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
+2. ...
 ### Mardi
 #### Objectifs :
 1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
