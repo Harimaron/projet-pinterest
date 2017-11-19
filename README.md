@@ -1,10 +1,10 @@
 # For a better Pinterest!
 ![Pinterest](https://i.imgur.com/0JtBdgj.png "Pinterest")
 ## Organisation de l'équipe
-- Frontend → Visual Designer : **Bonjour**
-- Frontend → Intégrateur : **Bonsoir**
-- Backend → PHP : **Salut**
-- Backend → Base de données : **Aurevoir**
+- Frontend **1** Visual Designer : **Bonjour**
+- Frontend **2** Intégrateur : **Bonsoir**
+- Backend **3** PHP : **Salut**
+- Backend **4** Base de données : **Aurevoir**
 ## Planning 
 ### Lundi 
 #### Objectifs :
