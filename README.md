@@ -1,5 +1,5 @@
 # For a better Pinterest!
-![Pinterest](http://wersm.com/wp-content/uploads/2014/12/wersm-pinterest-board-blue-pin-657x360.png "Pinterest")
+![Pinterest](https://i.imgur.com/0JtBdgj.png "Pinterest")
 ## Organisation de l'équipe
 - Frontend → Visual Designer : **Bonjour**
 - Frontend → Intégrateur : **Bonsoir**
@@ -7,8 +7,14 @@
 - Backend → Base de données : **Aurevoir**
 ## Planning 
 ### Lundi 
-#### _Objectifs_ :
+#### Objectifs :
 1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
 2. ...
 ### Mardi
+#### Objectifs :
+1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
+2. ...
 ### Mercredi
+#### Objectifs :
+1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
+2. ...
