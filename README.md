@@ -3,8 +3,8 @@
 ## Organisation de l'équipe
 - Frontend **1** Visual Designer : **Bonjour**
 - Frontend **2** Intégrateur : **Bonsoir**
-- Backend **3** PHP : **Salut**
-- Backend **4** Base de données : **Aurevoir**
+- Backend **1** Développeur PHP : **Salut**
+- Backend **2** Base de données : **Aurevoir**
 ## Planning 
 ### Lundi 
 #### Objectifs :
