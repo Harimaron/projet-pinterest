@@ -1,10 +1,13 @@
 # For a better Pinterest!
 ![Pinterest](https://i.imgur.com/KwYd48o.png "Pinterest")
 ## Organisation de l'équipe
-- Frontend **1** Water Quality Analyst : **Gaëtan**
-- Frontend **2** Customs Entry Clerk : **Valerian**
-- Backend **1** Flat Sorter Operator : **Antoine**
-- Backend **2** Oil Pipeline Operator : **Laureen**
+- Water Quality Analyst : **Gaëtan**
+- Customs Entry Clerk : **Valerian**
+- Flat Sorter Operator : **Antoine**
+- Oil Pipeline Operator : **Laureen**
+## Charte graphique
+- Polices : **Arial** & **Helvetica**.
+- Couleurs : ![Couleurs](https://i.imgur.com/J3Ks2uK.png "Couleurs")
 ## Planning 
 ### Lundi 
 #### Objectifs :
