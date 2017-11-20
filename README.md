@@ -1,5 +1,5 @@
 # For a better Pinterest!
-![Pinterest](https://i.imgur.com/0JtBdgj.png "Pinterest")
+![Pinterest](https://i.imgur.com/KwYd48o.png "Pinterest")
 ## Organisation de l'équipe
 - Frontend **1** Water Quality Analyst : **Gaëtan**
 - Frontend **2** Customs Entry Clerk : **Valerian**
