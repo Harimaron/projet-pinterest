@@ -1,10 +1,10 @@
 # For a better Pinterest!
 ![Pinterest](https://i.imgur.com/0JtBdgj.png "Pinterest")
 ## Organisation de l'équipe
-- Frontend **1** Visual Designer : **Bonjour**
-- Frontend **2** Intégrateur : **Bonsoir**
-- Backend **1** Développeur PHP : **Salut**
-- Backend **2** Base de données : **Aurevoir**
+- Frontend **1** Water Quality Analyst : **Gaëtan**
+- Frontend **2** Customs Entry Clerk : **Valerian**
+- Backend **1** Flat Sorter Operator : **Antoine**
+- Backend **2** Oil Pipeline Operator : **Laureen**
 ## Planning 
 ### Lundi 
 #### Objectifs :
