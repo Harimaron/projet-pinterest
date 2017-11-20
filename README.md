@@ -14,7 +14,8 @@
 4. S'occuper du design : Icônes, codes couleur, polices, logo, etc.
 #### Objectifs réalisés :
 1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
-2. ...
+2. Gérer la structure des dossiers.
+3. S'occuper du design : Icônes, codes couleur, polices, logo, etc.
 ### Mardi
 #### Objectifs :
 1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
