@@ -9,7 +9,7 @@
 ### Lundi 
 #### Objectifs :
 1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
-2. Réaliser les maquettes.
+2. Réaliser les maquettes, définir les classes.
 3. Gérer la structure des dossiers.
 4. S'occuper du design : Icônes, codes couleur, polices, logo, etc.
 #### Objectifs réalisés :
