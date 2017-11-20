@@ -19,8 +19,9 @@
 - Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
 - Gérer la structure des dossiers.
 - S'occuper du design : Icônes, codes couleur, polices, logo, etc.
+- Réaliser les maquettes.
 #### Objectifs non réalisés :
-- Réaliser les maquettes, définir les classes.
+- Définir les classes.
 ### Mardi
 #### Objectifs :
 1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
