@@ -30,9 +30,11 @@
 4. Créer tous les fichiers MVC.
 5. Préparer le Favicon.
 #### Objectifs réalisés :
-- ...
-- ...
-- ...
+1. Définir les sections.
+2. Créer la structure interne des dossiers.
+3. Créer la base de données.
+4. Créer tous les fichiers MVC.
+5. Préparer le Favicon.
 #### Objectifs non réalisés :
 - ...
 ### Mercredi
