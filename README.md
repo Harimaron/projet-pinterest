@@ -19,12 +19,21 @@
 - Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
 - Gérer la structure des dossiers.
 - S'occuper du design : Icônes, codes couleur, polices, logo, etc.
-#### Objectifs non réalisés :
 - Réaliser les maquettes, définir les classes.
+#### Objectifs non réalisés :
+- ...
 ### Mardi
 #### Objectifs :
-1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
-2. ...
+1. Définir les sections.
+2. Créer la structure interne des dossiers.
+3. Créer la base de données.
+4. Créer tous les fichiers MVC.
+#### Objectifs réalisés :
+- ...
+- ...
+- ...
+#### Objectifs non réalisés :
+- ...
 ### Mercredi
 #### Objectifs :
 1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
