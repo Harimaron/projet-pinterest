@@ -20,7 +20,8 @@ class db{
       return false;
     }
     $req=$this->db->prepare("INSERT INTO users (pseudo,password) VAlUES (?,?)");
-    $req->execute([$pseudo,$password]);
+    $hashPassword=sha1($password);
+    $req->execute([$pseudo,$hashPassword]);
     return true;
   }
 
@@ -31,8 +32,9 @@ class db{
     if($req->rowcount()==1)
     {
       $user=$req->fetchObject();
+      $hashPassword=sha1($password);
 
-      if ($user->password==$password)
+      if ($user->password==$hashPassword)
       {
         session_start();
         $_SESSION['pseudo']=$pseudo;
@@ -44,7 +46,12 @@ class db{
       return false;
     }
   }
-  
+  public function logout()
+  {
+    session_unset();
+    session_destroy();
+  }
+
 
 
 }
