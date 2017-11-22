@@ -20,6 +20,9 @@
 - Gérer la structure des dossiers.
 - S'occuper du design : Icônes, codes couleur, polices, logo, etc.
 - Réaliser les maquettes, définir les classes.
+##### Bonus:
+- Création de la class PDO.
+- Commencment de la class Validation.
 #### Objectifs non réalisés :
 - ...
 ### Mardi
