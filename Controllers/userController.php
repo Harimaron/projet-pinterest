@@ -16,8 +16,12 @@ class userController
     if ($this->db->SignIn()) {
 
       if ($this->validation->adminIds($pseudo,$password)) {
+        session_start();
+        $_SESSION['error']="";
         header("location:index.php?action=admin");
       }else {
+        session_start();
+        $_SESSION['error']="";
         include "Views/home.php";
       }
 

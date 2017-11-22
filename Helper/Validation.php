@@ -28,7 +28,22 @@ class Validation{
     if ($_SESSION["pseudo"]=="DevAdmin")
     {
       $_SESSION["admin"]=true;
+      return true;
     }
+    return false;
+  }
+
+  public function photoType($type)
+  {
+    if($type==="image/jpeg" || $type==="image/jpg" || $type==="image/gif" || $type==="image/webP" )
+    {
+      session_start();
+      $_SESSION['error']="";
+      return true;
+    }
+    session_start();
+    $_SESSION['error']="invalid photo format";
+    return false;
   }
 
 
