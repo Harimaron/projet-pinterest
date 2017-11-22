@@ -2,7 +2,7 @@
 $action=$_GET['action'];
 
 
-swith($action)
+switch($action)
 {
   case 'login':
   include "Views/login.php";
