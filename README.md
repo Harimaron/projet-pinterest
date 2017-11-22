@@ -55,16 +55,16 @@
 11. envoie photos vers db
 #### Objectifs réalisés :
 1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
-3. Terminer la classe validation pour la partie backend.
-5. Mettre les formulaires en place dans les fichiers PHP. 
-6. Terminer class userController
-7. Terminer class Validation
-9. Creer folder Image
-11. envoie photos vers db
+2. Terminer la classe validation pour la partie backend.
+3. Mettre les formulaires en place dans les fichiers PHP. 
+4. Terminer class userController
+5. Terminer class Validation
+6. Creer folder Image
+7. envoie photos vers db
 #### Objectifs en cours:
-2. Mettre en place le HTML / CSS de base
-8. Creer controller image
+1. Mettre en place le HTML / CSS de base
+2. Creer controller image
 #### Objectifs non commencés :
-4. Faire la partie backend qui permet d'envoyer les photos vers la DB.
-10.Check-box or no check-box 
+1. Faire la partie backend qui permet d'envoyer les photos vers la DB.
+2.Check-box or no check-box 
 - ...
