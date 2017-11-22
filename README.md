@@ -43,4 +43,7 @@
 ### Mercredi
 #### Objectifs :
 1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
-2. ...
+2. Mettre en place le HTML / CSS de base
+3. Terminer la classe validation pour la partie backend.
+4. Faire la partie backend qui permet d'envoyer les photos vers la DB.
+5. Mettre les formulaires en place dans les fichiers PHP.  
