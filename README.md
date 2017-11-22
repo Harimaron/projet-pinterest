@@ -65,6 +65,6 @@
 1. Mettre en place le HTML / CSS de base
 2. Creer controller image
 #### Objectifs non commencés :
-1. Faire la partie backend qui permet d'envoyer les photos vers la DB.
+1. Faire la partie backend qui permet d'envoyer les photos vers la DB
 2.Check-box or no check-box 
 - ...
