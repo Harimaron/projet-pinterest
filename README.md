@@ -66,5 +66,5 @@
 2. Creer controller image
 #### Objectifs non commencés :
 1. Faire la partie backend qui permet d'envoyer les photos vers la DB
-2.Check-box or no check-box 
+2. Check-box or no check-box 
 - ...
