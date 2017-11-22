@@ -1,23 +1,33 @@
 <?php
-$action=$_GET['action'];
+include "Controllers/userController.php";
+include 'Controllers/';
+include 'Helper/Validation.php';
+include 'Models/db.php';
+include 'Models/photo.php';
 
+$action="";
+$userController=new userController();
+extract($_POST);
+extract($_GET);
 
 switch($action)
 {
   case 'login':
-  include "Views/login.php";
+    $userController->login($pseudo,$password);
   break;
   case 'admin':
-    include "Views/admin.php";
+    $userController->admin();
   break;
   case 'home':
-    include "Views/home.php";
   break;
   case 'signup':
-    include "Views/signup.php";
+    //include 'Views/signup.php';
+    $userController->signUp($pseudo,$password);
   break;
   case 'upload':
-    include "Views/upload.php";
+  break;
+  default:
+    include "Views/login.php";
   break;
 }
 

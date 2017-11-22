@@ -12,7 +12,7 @@ class userController
     $this->validation=new Validation();
   }
   public function login($pseudo,$password) {
-    
+
     if ($this->db->SignIn()) {
 
       if ($this->validation->adminIds($pseudo,$password)) {
@@ -33,6 +33,7 @@ class userController
     public function signUp($pseudo,$password)
     {
       if ($this->validation->ids($pseudo,$password)) {
+        $this->db->signUp($pseudo,$password);
         include "Views/login.php";
       }else {
         include "Views/signup.php";
@@ -44,6 +45,16 @@ class userController
 
       }
     }
+    public function admin()
+    {
+      if ($_SESSION["admin"]) {
+        include "Views/admin.php";
+      }else{
+        $this->db->logout();
+        include 'Views/login.php';
+      }
+    }
+
 }
 
 
