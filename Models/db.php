@@ -38,6 +38,7 @@ class db{
       {
         session_start();
         $_SESSION['pseudo']=$pseudo;
+        $_SESSION["user_id"]=$user->id;
         $_SESSION['logged']=true;
         return true;
       }else{
