@@ -8,7 +8,7 @@
 
 	<main>
 		<div class="grid">
-
+<!-- 
 <?php
 $data=[];
 foreach ($data as $champImage) { ?>
@@ -20,57 +20,57 @@ foreach ($data as $champImage) { ?>
 					</figure>
 			</a>
 <?php
-} ?>
-<!-- 
+} ?> -->
+
 			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="http://placehold.it/700x500">
-					</figure>
-					<figcaption>Description</figcaption>
+						<figcaption>Description</figcaption>
+					</figure>	
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="http://placehold.it/350x350">
+						<figcaption>Description</figcaption>
 					</figure>
-					<figcaption>Description</figcaption>
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="http://placehold.it/350x440">
+						<figcaption>Description</figcaption>
 					</figure>
-					<figcaption>Description</figcaption>
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="http://placehold.it/500x100">
-					</figure>
-					<figcaption>Description</figcaption>
+						<figcaption>Description</figcaption>
+					</figure>	
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="http://placehold.it/400x250">
-					</figure>
-					<figcaption>Description</figcaption>
+						<figcaption>Description</figcaption>
+					</figure>		
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="http://placehold.it/850x150">
-					</figure>
-					<figcaption>Description</figcaption>
+						<figcaption>Description</figcaption>
+					</figure>	
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="http://placehold.it/350x440">
-					</figure>
-					<figcaption>Description</figcaption>
+						<figcaption>Description</figcaption>
+					</figure>	
 			</a>
- -->
+
 		</div>
 	</main>
 
