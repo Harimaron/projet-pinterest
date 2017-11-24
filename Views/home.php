@@ -71,14 +71,14 @@
 					<figcaption>Description</figcaption>
 				</article>
 			</a>
-			
+
 		</div>
-	</main>	
+	</main>
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-<script src="Javascript/app.js" type="text/javascript"></script>
-<script src="Javascript/library.js" type="text/javascript"></script>
+<script src="Javascript/home.js" type="text/javascript"></script>
+<script src="Javascript/libraryHome.js" type="text/javascript"></script>
 
 </body>
 </html>
