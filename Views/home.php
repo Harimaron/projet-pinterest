@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="Assets/home.css">
 	<title></title>
 </head>
 <body>
@@ -9,67 +9,66 @@
 	<main>
 		<div class="grid">
 
-			<a class="grid-item" href="#" title="titre">
-				<article>
-				  	<figure>
-						<img src="http://placehold.it/350x700">
-					</figure>
-					<figcaption>Description</figcaption>
-				</article>
-			</a>
+<!-- <?php
+$data=[];
+foreach ($data as $champImage) { ?>
 
 			<a class="grid-item" href="#" title="titre">
-				<article>
+				  	<figure>
+						<img src="<?php echo "mini-imageBank/".$champImage['url']; ?>">
+						<h1> <?php echo $champImage['title']; ?> </h1> 
+					</figure>
+			</a>
+<?php
+} ?> -->
+
+			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="http://placehold.it/700x500">
 					</figure>
 					<figcaption>Description</figcaption>
-				</article>
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
-				<article>
 				  	<figure>
 						<img src="http://placehold.it/350x350">
 					</figure>
 					<figcaption>Description</figcaption>
-				</article>
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
-				<article>
 				  	<figure>
 						<img src="http://placehold.it/350x440">
 					</figure>
 					<figcaption>Description</figcaption>
-				</article>
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
-				<article>
 				  	<figure>
 						<img src="http://placehold.it/500x100">
 					</figure>
 					<figcaption>Description</figcaption>
-				</article>
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
-				<article>
 				  	<figure>
 						<img src="http://placehold.it/400x250">
 					</figure>
 					<figcaption>Description</figcaption>
-				</article>
 			</a>
 
 			<a class="grid-item" href="#" title="titre">
-				<article>
 				  	<figure>
 						<img src="http://placehold.it/850x150">
 					</figure>
 					<figcaption>Description</figcaption>
-				</article>
+			</a>
+
+			<a class="grid-item" href="#" title="titre">
+				  	<figure>
+						<img src="http://placehold.it/350x440">
+					</figure>
+					<figcaption>Description</figcaption>
 			</a>
 
 		</div>
