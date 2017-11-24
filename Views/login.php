@@ -2,13 +2,13 @@
     <head>
         <title>Login</title>
             <link rel="stylesheet" href="Assets/login.css">
-            <script src="app.js"></script> 
-            <meta charset="ISO-8859-1"> 
+            <script src="app.js"></script>
+            <meta charset="ISO-8859-1">
       </head>
       <body>
       <div class="login-page">
           <div class="form">
-            <form class="login-form">
+            <form class="login-form" action="index.php?action=loginData">
               <input type="text" placeholder="username"/>
               <input type="password" placeholder="password"/>
               <button>login</button>

@@ -16,8 +16,11 @@ extract($_GET);
 switch($action)
 {
   case 'login':
-    $userController->login($pseudo,$password);
+    include "Views/login.php";
   break;
+  case 'loginData':
+      $userController->login($pseudo,$password);
+    break;
   case 'admin':
     $userController->admin();
   break;
