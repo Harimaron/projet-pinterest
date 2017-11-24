@@ -7,11 +7,6 @@ include 'Models/photo.php';
 require 'vendor/autoload.php';
   use Intervention\Image\ImageManagerStatic as Image;
 
-session_start();
-$_SESSION["logged"]=true;
-$_SESSION["user_id"]=1;
-
-
 $action="";
 $userController=new userController();
 $photoController= new photoController();
@@ -21,8 +16,11 @@ extract($_GET);
 switch($action)
 {
   case 'login':
-    $userController->login($pseudo,$password);
+    include "Views/login.php";
   break;
+  case 'loginData':
+      $userController->login($pseudo,$password);
+    break;
   case 'admin':
     $userController->admin();
   break;
