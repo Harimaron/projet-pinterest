@@ -16,9 +16,7 @@ class photoController
     $this->photo= new photo();
   }
   public function upLoad($photo,$title,$description)
-  {    session_start();
-    $_SESSION["user_id"]=1;
-    $_SESSION['logged']=true;
+  {    
     if ($_SESSION["logged"]) {
       if ($this->validation->photoType($photo["type"])) {
 
