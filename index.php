@@ -28,9 +28,12 @@ switch($action)
     $userController->home();
   break;
   case 'signup':
-    //include 'Views/signup.php';
-    $userController->signUp($pseudo,$password);
+    include 'Views/signup.php';
   break;
+  case 'signupData':
+    echo $pseudo;echo $password;
+    $userController->signUp($pseudo,$password);
+    break;
   case 'uploadPage':
     $userController->photoForm();
   break;
@@ -41,5 +44,5 @@ switch($action)
     include "Views/login.php";
   break;
 }
-
+//var_dump($_SESSION);
 ?>

@@ -8,9 +8,9 @@
       <body>
       <div class="login-page">
           <div class="form">
-            <form class="login-form" action="index.php?action=loginData">
-              <input type="text" placeholder="username"/>
-              <input type="password" placeholder="password"/>
+            <form class="login-form" action="index.php?action=loginData" method="POST">
+              <input type="text" name="pseudo" placeholder="username"/>
+              <input type="password" name="password" placeholder="password"/>
               <button>login</button>
               <p class="message">Not registered? <a href="#">Create an account</a></p>
             </form>
