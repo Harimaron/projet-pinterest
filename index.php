@@ -29,7 +29,7 @@ switch($action)
   case 'uploadPage':
   break;
   case 'updloadData':
-    $photoController->upLoad($_FILES["url"]);
+    $photoController->upLoad($_FILES["url"],$_POST["titre"],$_POST["description"]);
     break;
   default:
     include "Views/login.php";
