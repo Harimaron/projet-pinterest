@@ -35,7 +35,7 @@ class Validation{
 
   public function photoType($type)
   {
-    if($type==="image/jpeg" || $type==="image/jpg" || $type==="image/gif" || $type==="image/webP" )
+    if($type==="image/jpeg" || $type==="image/jpg" || $type==="image/gif" || $type==="image/webP" || $type=="image/png" )
     {
       session_start();
       $_SESSION['error']="";

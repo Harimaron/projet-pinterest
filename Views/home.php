@@ -9,7 +9,7 @@
 	<main>
 		<div class="grid">
 
-<!-- <?php
+<?php
 $data=[];
 foreach ($data as $champImage) { ?>
 
@@ -20,8 +20,8 @@ foreach ($data as $champImage) { ?>
 					</figure>
 			</a>
 <?php
-} ?> -->
-
+} ?>
+<!-- 
 			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="http://placehold.it/700x500">
@@ -70,7 +70,7 @@ foreach ($data as $champImage) { ?>
 					</figure>
 					<figcaption>Description</figcaption>
 			</a>
-
+ -->
 		</div>
 	</main>
 

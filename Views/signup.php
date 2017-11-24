@@ -1,11 +1,20 @@
-<form action="index.php?action=signup" method="post">
-
-	<label for="pseudo">Choisissez un pseudo</label>
-	<input type="text" name="pseudo" id="register_form"/><br/><br/>
-
-	<label for="password">Entrez votre mot de passe</label>
-	<input type="text" name="password" id="register_form"/><br/><br/>
-
-	<input type="submit" value="Signer" id="register_button"/><br/><br/>
-
-</form>
+<html>
+    <head>
+        <title>Register</title>
+            <link rel="stylesheet" href="signup.css">
+            <script src="app.js"></script> 
+            <meta charset="ISO-8859-1"> 
+      </head>
+      <body>
+      <div class="login-page">
+          <div class="form">
+            <form class="register-form">
+              <input type="text" placeholder="username"/>
+              <input type="password" placeholder="password"/>
+              <button>create</button>
+              <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+          </div>
+        </div>
+      </body>
+</html>
