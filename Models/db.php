@@ -53,13 +53,7 @@ class db{
     session_destroy();
   }
 
-  public function getAllImage($search='')
-  {
-    $req=$this->db->prepare("SELECT * FROM images WHERE description LIKE'%(?)%'");
-    $req->execute([$search]);
-    $resultat=$req->fetchObject();
-    return $resultat;
-  }
+
 
 
 

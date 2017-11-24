@@ -21,6 +21,15 @@ class photo
     $req->execute([$url,$title,$description,$user_id]);
 
   }
+
+  public function getAllImage($search='')
+  {
+    $req=$this->db->prepare("SELECT * FROM images WHERE description LIKE'%(?)%'");
+    $req->execute([$search]);
+    $resultat=$req->fetchObject();
+    return $resultat;
+  }
+
   public function deletePhotos($photoIdArray)
   {
     $query="DELETE FROM images WHERE photo_id in (";
