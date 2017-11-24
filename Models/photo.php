@@ -8,7 +8,7 @@ class photo
   function __construct()
   {
     try {
-        $this->db = new PDO('mysql:host=devterest;dbname=chatbox', 'user', 'user');
+        $this->db = new PDO('mysql:host=localhost;dbname=devterest', 'user', 'user');
         $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (Exception $e) {
         die('Erreur :' . $e->getMessage());
@@ -17,10 +17,19 @@ class photo
   }
   public function newPhoto($url,$title,$description,$user_id)
   {
-    $req=$this->db->prepare("INSERT INTO images (url,title,description,user_id) (?,?,?,?)");
+    $req=$this->db->prepare("INSERT INTO images (url,title,description,user_id) VALUES (?,?,?,?)");
     $req->execute([$url,$title,$description,$user_id]);
 
   }
+
+  public function getAllImage($search='')
+  {
+    $req=$this->db->prepare("SELECT * FROM images WHERE description LIKE'%(?)%'");
+    $req->execute([$search]);
+    $resultat=$req->fetchObject();
+    return $resultat;
+  }
+
   public function deletePhotos($photoIdArray)
   {
     $query="DELETE FROM images WHERE photo_id in (";
@@ -38,11 +47,12 @@ class photo
   }
   public function editPhoto($photoId,$title,$description)
   {
-    if (empty($title) && empty($description)) {
+    if (empty($title) || empty($description)) {
       return false;
     }else {
       $req=$this->db->prepare("UPDATE images SET title = :title , description= :description WHERE iamges_uid = :photoId ");
       $req->execute([':title'=>$title,':description'=>$description,':photoId'=>$photoId]);
+      return true;
     }
   }
 }

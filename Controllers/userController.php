@@ -12,12 +12,16 @@ class userController
     $this->validation=new Validation();
   }
   public function login($pseudo,$password) {
-    
+
     if ($this->db->SignIn()) {
 
       if ($this->validation->adminIds($pseudo,$password)) {
+        session_start();
+        $_SESSION['error']="";
         header("location:index.php?action=admin");
       }else {
+        session_start();
+        $_SESSION['error']="";
         include "Views/home.php";
       }
 
@@ -33,15 +37,36 @@ class userController
     public function signUp($pseudo,$password)
     {
       if ($this->validation->ids($pseudo,$password)) {
+        $this->db->signUp($pseudo,$password);
         include "Views/login.php";
       }else {
         include "Views/signup.php";
       }
     }
-    public function adminIds($pseudo,$password)
-    {
-      if ($this->validation->adminIds($pseudo,$password)) {
 
+    public function admin()
+    {
+      if ($_SESSION["admin"]) {
+        include "Views/admin.php";
+      }else{
+        $this->db->logout();
+        include 'Views/login.php';
+      }
+    }
+    public function photoForm()
+    {
+      if ($_SESSION["logged"]) {
+        include "Views/upload.php";
+      }else{
+        header("location:index.php");
+      }
+    }
+    public function home()
+    {
+      if ($_SESSION["logged"]) {
+        include 'Views/home.php';
+      }else {
+        header("location:index.php");
       }
     }
 }

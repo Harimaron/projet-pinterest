@@ -4,7 +4,7 @@ class db{
   public function __construct()
   {
         try {
-            $this->db = new PDO('mysql:host=devterest;dbname=chatbox', 'user', 'user');
+            $this->db = new PDO('mysql:host=localhost;dbname=devterest', 'user', 'user');
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (Exception $e) {
             die('Erreur :' . $e->getMessage());
@@ -13,7 +13,7 @@ class db{
 
   public function signUp($pseudo,$password)
   {
-    $req = $this->db->prepare("SELECT * FROM Users where pseudo = (?)");
+    $req = $this->db->prepare("SELECT * FROM users where pseudo = (?)");
     $req->execute([$pseudo]);
     if($req->rowcount()==1)
     {
@@ -27,7 +27,7 @@ class db{
 
   public function SignIn($pseudo,$password)
   {
-    $req = $this->db->prepare("SELECT * FROM Users where pseudo = (?)");
+    $req = $this->db->prepare("SELECT * FROM users where pseudo = (?)");
     $req->execute([$pseudo]);
     if($req->rowcount()==1)
     {
@@ -38,11 +38,13 @@ class db{
       {
         session_start();
         $_SESSION['pseudo']=$pseudo;
+        $_SESSION["user_id"]=$user->id;
         $_SESSION['logged']=true;
         return true;
+      }else{
+        return false;
       }
-    }else
-    {
+    }else{
       return false;
     }
   }
@@ -51,6 +53,8 @@ class db{
     session_unset();
     session_destroy();
   }
+
+
 
 
 

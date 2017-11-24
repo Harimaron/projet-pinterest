@@ -47,6 +47,30 @@
 3. Terminer la classe validation pour la partie backend.
 4. Faire la partie backend qui permet d'envoyer les photos vers la DB.
 5. Mettre les formulaires en place dans les fichiers PHP. 
+6. Terminer class userController
+7. Terminer class Validation
+8. Creer controller image
+9. Creer folder Image
+10.Check-box or no check-box 
+11. envoie photos vers db
+#### Objectifs réalisés :
+1. Distribuer les différents rôles, parler de ce que l'on souhaite réaliser.
+2. Terminer la classe validation pour la partie backend.
+3. Mettre les formulaires en place dans les fichiers PHP. 
+4. Terminer class userController
+5. Terminer class Validation
+6. Creer folder Image
+7. envoie photos vers db
+#### Objectifs en cours:
+1. Mettre en place le HTML / CSS de base
+2. Creer controller image
+#### Objectifs non commencés :
+1. Faire la partie backend qui permet d'envoyer les photos vers la DB
+2. Check-box or no check-box 
+- ...
+### Vendredi
+#### Objectifs :
+1. ...
 #### Objectifs réalisés :
 1. ...
 #### Objectifs non réalisés :
