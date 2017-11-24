@@ -1,4 +1,4 @@
-<form action="../Models/imageTest.php" method="post" enctype="multipart/form-data">
+<form action="../index.php?action=updloadData" method="post" enctype="multipart/form-data">
 
 	<label for="url">Importez votre image</label>
 	<input type="file" name="url" id="up_image"/><br/><br/>

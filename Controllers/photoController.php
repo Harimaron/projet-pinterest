@@ -2,6 +2,8 @@
 /**
  *
  */
+ use Intervention\Image\ImageManagerStatic as Image;
+
 class photoController
 {
   public $db;
@@ -14,22 +16,24 @@ class photoController
     $this->photo= new photo();
   }
   public function upLoad($photo,$title,$description)
-  {
+  {    session_start();
+    $_SESSION["user_id"]=1;
+    $_SESSION['logged']=true;
     if ($_SESSION["logged"]) {
       if ($this->validation->photoType($photo["type"])) {
 
-        use Intervention\Image\ImageManagerStatic as Image;
+
 
         Image::configure(array('driver' => 'imagick'));
 
         $img = Image::make($photo["tmp_name"]);
 
-        $img->save('../big-imageBank/'.$photo["name"]);
+        $img->save('big-imageBank/'.$photo["name"]);
 
         $img->resize(320, 240);
 
 
-        $img->save('../mini-imageBank/'.$photo["name"]);
+        $img->save('mini-imageBank/'.$photo["name"]);
         $this->photo->newPhoto($photo["name"],$title,$description,$_SESSION["user_id"]);
         //model
         header("Location:index.php?action=home");
@@ -39,7 +43,7 @@ class photoController
     }else{
       $this->db->logout();
       //header("Location:index?action=login");
-      header("Location:index");
+      header("Location:index.php");
     }
   }
 

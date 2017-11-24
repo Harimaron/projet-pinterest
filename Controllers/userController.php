@@ -43,12 +43,7 @@ class userController
         include "Views/signup.php";
       }
     }
-    public function adminIds($pseudo,$password)
-    {
-      if ($this->validation->adminIds($pseudo,$password)) {
 
-      }
-    }
     public function admin()
     {
       if ($_SESSION["admin"]) {

@@ -8,7 +8,7 @@ class photo
   function __construct()
   {
     try {
-        $this->db = new PDO('mysql:host=devterest;dbname=chatbox', 'user', 'user');
+        $this->db = new PDO('mysql:host=localhost;dbname=devterest', 'user', 'user');
         $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (Exception $e) {
         die('Erreur :' . $e->getMessage());
@@ -17,7 +17,7 @@ class photo
   }
   public function newPhoto($url,$title,$description,$user_id)
   {
-    $req=$this->db->prepare("INSERT INTO images (url,title,description,user_id) (?,?,?,?)");
+    $req=$this->db->prepare("INSERT INTO images (url,title,description,user_id) VALUES (?,?,?,?)");
     $req->execute([$url,$title,$description,$user_id]);
 
   }

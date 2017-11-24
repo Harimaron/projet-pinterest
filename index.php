@@ -4,7 +4,8 @@ include 'Controllers/photoController.php';
 include 'Helper/Validation.php';
 include 'Models/db.php';
 include 'Models/photo.php';
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
+  use Intervention\Image\ImageManagerStatic as Image;
 
 $action="";
 $userController=new userController();

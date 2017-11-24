@@ -13,7 +13,7 @@ class Validation{
             return false;
         }
         elseif (!preg_match("/^[a-z0-9_-]{5,}$/", $password)) {
-            $errors->"votre mot de passe doit contenir au moins 8 caractères avec au minimum une majuscule,une minuscule et 1 nombre ";
+            $errors="votre mot de passe doit contenir au moins 8 caractères avec au minimum une majuscule,une minuscule et 1 nombre ";
 
             $_SESSION["errors"] = $errors;
             return false;

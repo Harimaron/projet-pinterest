@@ -42,4 +42,8 @@ $img->save('../mini-imageBank/'.$_FILES["url"]["name"]);// save photo in small s
 //   date TIMESTAMP ,
 //   user_id SERIAL
 // );
+
+last_name VARCHAR (30),
+db0uojqjbc80ph(>   first_name VARCHAR (30),
+db0uojqjbc80ph(>   title
 ?>
