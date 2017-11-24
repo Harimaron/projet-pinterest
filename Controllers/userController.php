@@ -6,10 +6,13 @@ class userController
 {
   public $db;
   public $validation;
+  public $photo;
+
   function __construct()
   {
     $this->db=new db();
     $this->validation=new Validation();
+    $this->photo= new photo();
   }
   public function login($pseudo,$password) {
 
@@ -64,6 +67,7 @@ class userController
     public function home()
     {
       if ($_SESSION["logged"]) {
+        $data=$this->photo->getAllImage();
         include 'Views/home.php';
       }else {
         header("location:index.php");

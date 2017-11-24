@@ -26,7 +26,7 @@ class photo
   {
     $req=$this->db->prepare("SELECT * FROM images WHERE description LIKE'%(?)%'");
     $req->execute([$search]);
-    $resultat=$req->fetchObject();
+    $resultat=$req->fetchAll();
     return $resultat;
   }
 
