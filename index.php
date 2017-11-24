@@ -1,12 +1,14 @@
 <?php
 include "Controllers/userController.php";
-include 'Controllers/';
+include 'Controllers/photoController.php';
 include 'Helper/Validation.php';
 include 'Models/db.php';
 include 'Models/photo.php';
+require '../vendor/autoload.php';
 
 $action="";
 $userController=new userController();
+$photoController= new photoController();
 extract($_POST);
 extract($_GET);
 
@@ -24,8 +26,11 @@ switch($action)
     //include 'Views/signup.php';
     $userController->signUp($pseudo,$password);
   break;
-  case 'upload':
+  case 'uploadPage':
   break;
+  case 'updloadData':
+    $photoController->upLoad($_FILES["url"]);
+    break;
   default:
     include "Views/login.php";
   break;
