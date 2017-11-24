@@ -53,7 +53,22 @@ class userController
         include 'Views/login.php';
       }
     }
-
+    public function photoForm()
+    {
+      if ($_SESSION["logged"]) {
+        include "Views/upload.php";
+      }else{
+        header("location:index.php");
+      }
+    }
+    public function home()
+    {
+      if ($_SESSION["logged"]) {
+        include 'Views/home.php';
+      }else {
+        header("location:index.php");
+      }
+    }
 }
 
 

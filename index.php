@@ -22,12 +22,14 @@ switch($action)
     $userController->admin();
   break;
   case 'home':
+    $userController->home();
   break;
   case 'signup':
     //include 'Views/signup.php';
     $userController->signUp($pseudo,$password);
   break;
   case 'uploadPage':
+    $userController->photoForm();
   break;
   case 'updloadData':
     $photoController->upLoad($_FILES["url"],$_POST["titre"],$_POST["description"]);
