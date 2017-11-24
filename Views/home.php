@@ -13,8 +13,8 @@
 				<article>
 				  	<figure>
 						<img src="http://placehold.it/350x700">
-						<figcaption>Description</figcaption>
 					</figure>
+					<figcaption>Description</figcaption>
 				</article>
 			</a>
 
@@ -22,8 +22,8 @@
 				<article>
 				  	<figure>
 						<img src="http://placehold.it/700x500">
-						<figcaption>Description</figcaption>
 					</figure>
+					<figcaption>Description</figcaption>
 				</article>
 			</a>
 
@@ -31,8 +31,8 @@
 				<article>
 				  	<figure>
 						<img src="http://placehold.it/350x350">
-						<figcaption>Description</figcaption>
 					</figure>
+					<figcaption>Description</figcaption>
 				</article>
 			</a>
 
@@ -40,8 +40,8 @@
 				<article>
 				  	<figure>
 						<img src="http://placehold.it/350x440">
-						<figcaption>Description</figcaption>
 					</figure>
+					<figcaption>Description</figcaption>
 				</article>
 			</a>
 
@@ -49,8 +49,8 @@
 				<article>
 				  	<figure>
 						<img src="http://placehold.it/500x100">
-						<figcaption>Description</figcaption>
 					</figure>
+					<figcaption>Description</figcaption>
 				</article>
 			</a>
 
@@ -58,8 +58,8 @@
 				<article>
 				  	<figure>
 						<img src="http://placehold.it/400x250">
-						<figcaption>Description</figcaption>
 					</figure>
+					<figcaption>Description</figcaption>
 				</article>
 			</a>
 
@@ -67,8 +67,8 @@
 				<article>
 				  	<figure>
 						<img src="http://placehold.it/850x150">
-						<figcaption>Description</figcaption>
 					</figure>
+					<figcaption>Description</figcaption>
 				</article>
 			</a>
 			
