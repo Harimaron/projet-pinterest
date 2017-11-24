@@ -7,11 +7,6 @@ include 'Models/photo.php';
 require 'vendor/autoload.php';
   use Intervention\Image\ImageManagerStatic as Image;
 
-session_start();
-$_SESSION["logged"]=true;
-$_SESSION["user_id"]=1;
-
-
 $action="";
 $userController=new userController();
 $photoController= new photoController();
