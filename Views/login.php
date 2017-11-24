@@ -1,11 +1,20 @@
-<form action="index.php?action=login" method="post">
-
-	<label for="pseudo">Entrez votre pseudo</label>
-	<input type="text" name="pseudo" id="login_form"/><br/><br/>
-
-	<label for="password">Entrez votre mot de passe</label>
-	<input type="text" name="password" id="login_form"/><br/><br/>
-
-	<input type="submit" value="Log in" id="login_button"/><br/><br/>
-
-</form>
+<html>
+    <head>
+        <title>Login</title>
+            <link rel="stylesheet" href="Assets/login.css">
+            <script src="app.js"></script> 
+            <meta charset="ISO-8859-1"> 
+      </head>
+      <body>
+      <div class="login-page">
+          <div class="form">
+            <form class="login-form">
+              <input type="text" placeholder="username"/>
+              <input type="password" placeholder="password"/>
+              <button>login</button>
+              <p class="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
+          </div>
+        </div>
+      </body>
+</html>
