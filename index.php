@@ -45,5 +45,6 @@ switch($action)
     include "Views/login.php";
   break;
 }
+
 //var_dump($_SESSION);
 ?>

@@ -36,13 +36,12 @@ class photo
     $query="DELETE FROM images WHERE photo_id in (";
 
     for ($i=0; $i < count($photoIdArray); $i++) {
-      $query=$query+"?";
+      $query=$query."?";
       if ($i != count($photoIdArray)-1) {
-        $query=$query+",";
+        $query=$query.",";
       }
     }
-    $query=$query+")";
-
+    $query=$query.")";
     $req=$this->db->prepare($query);
     $req->execute($photoIdArray);
   }
