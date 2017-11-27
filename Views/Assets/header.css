@@ -22,7 +22,7 @@ body {
     border-radius: 30px;
 }
 
-.logo:hover {
+.logo-header:hover {
     cursor:  pointer;
 }
 img {
@@ -34,7 +34,9 @@ img {
     align-self: center;
 }
 
-input[type=text] {
+.search-header input[type=text] {
+    order: 2;
+    align-self: center;
     width: 800px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -49,20 +51,20 @@ input[type=text] {
     color: silver;
 }
 
-.settings {
+.settings-header {
     order: 4;
     height: 100%;
 }
     
-.settings:hover {
+.settings-header:hover {
     cursor:  pointer;
 }
 
-.upload {
+.upload-header {
     order: 3;
     height: 100%;
 }
 
-.upload:hover {
+.upload-header:hover {
     cursor:  pointer;
 }
