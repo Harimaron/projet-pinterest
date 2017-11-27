@@ -1,19 +1,30 @@
 main{
-	width: 90%;
+	width: 100%;
 	margin: 50px auto;
-	column-width: 220px;
-	column-count: 3;
-	column-gap: 20px;
+	column-width: 100px;
+	column-count: 5;
+	column-gap: 0px;
 	font-family: helvetica, arial; 
 }
 
 .grid-item { 
-	width: 200px;
- 	background: #000;
+	width: 100%;
  	text-decoration: none;
  	color: #555555 ;
  }
 
 .grid-item img{
 	width: 100%;
+	border-radius: 10px;
+}
+
+figure {
+	margin : 0px 12px;
+}
+
+figcaption{
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 30px;
 }
