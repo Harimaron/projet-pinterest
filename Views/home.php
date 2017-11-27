@@ -10,18 +10,18 @@
 		<div class="grid">
 
 <?php
-$data=[];
+//$data=[];
 foreach ($data as $champImage) { ?>
 
 			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="<?php echo "mini-imageBank/".$champImage['url']; ?>">
-						<h1> <?php echo $champImage['title']; ?> </h1> 
+						<h1> <?php echo $champImage['title']; ?> </h1>
 					</figure>
 			</a>
 <?php
 } ?>
-<!-- 
+<!--
 			<a class="grid-item" href="#" title="titre">
 				  	<figure>
 						<img src="http://placehold.it/700x500">
