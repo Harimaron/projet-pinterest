@@ -66,7 +66,7 @@ class userController
     }
     public function home()
     {
-      session_start();
+    //session_start();
       if ($_SESSION["logged"]) {
         $data=$this->photo->getAllImage();
         //echo "HOME logged";
