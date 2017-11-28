@@ -46,6 +46,20 @@ class photoController
     }
   }
 
+  public function editPhoto($title,$descritpion,$id)
+  {
+    $this->photo->editPhoto($id,$title,$description);
+    header("location:index.php?action=admin");
+  }
+
+  public function deletePhoto($id)
+  {
+    $this->photo->deletePhoto($id);
+    header("location:index.php?action=admin");
+  }
+
+
+
 }
 
  ?>

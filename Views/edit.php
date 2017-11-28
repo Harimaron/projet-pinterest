@@ -7,18 +7,19 @@
   <title>Document</title>
 </head>
 <?php
+
 if( $_SERVER['REQUEST_METHOD'] == "GET"){
 extract($_GET);
-$photo=new photo();
-$edit=$photo->getEditPhoto($id);
+
 
 }
 ?>
 <body>
-  <form action="">
+  <form action="index.php?action=editData">
 
   <input type="text" name="title" value=<?php echo $edit['title']; ?>/>
   <input type="description" name="descritpion" value=<?php echo $edit['description']; ?>/>
+  <input type="hidden" name="id" value=<?php echo $edit['photo_id'];  ?>
   <input type="submit" value="Edit"/>
 
 

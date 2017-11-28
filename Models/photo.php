@@ -57,7 +57,7 @@ class photo
     if (empty($title) || empty($description)) {
       return false;
     }else {
-      $req=$this->db->prepare("UPDATE images SET title = :title , description= :description WHERE iamges_uid = :photoId ");
+      $req=$this->db->prepare("UPDATE images SET title = :title , description= :description WHERE photo_id = :photoId ");
       $req->execute([':title'=>$title,':description'=>$description,':photoId'=>$photoId]);
       return true;
     }
