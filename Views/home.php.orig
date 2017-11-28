@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="Assets/home.css">
+	<link rel="stylesheet" href="Views/Assets/home.css">
+	<link rel="stylesheet" href="Views/Assets/footer_pagination.css">
 	<title>test</title>
 	<meta name="viewport" content="width=device-width">
 </head>
@@ -12,7 +13,7 @@
   <div class="grid-sizer"></div>
 
 <?php
-$data=[];
+//$data=[];
 foreach ($data as $champImage) { ?>
 
 	<a class="grid-item" href="#" title="titre">
@@ -24,6 +25,7 @@ foreach ($data as $champImage) { ?>
 <?php
 } ?>
 
+<<<<<<< HEAD
   <div class="grid-item"> 
    <a href="#">
      <figure> 
@@ -31,6 +33,15 @@ foreach ($data as $champImage) { ?>
       <figcaption>Description</figcaption>
     </figure>
   </a> 
+=======
+  <div class="grid-item">
+  	<a href="#">
+  	<figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+    <figcaption>Description</figcaption>
+	</figure>
+	</a>
+>>>>>>> 87e772bd9c0a0eea4b3b9a74e18eff56579e064d
   </div>
 
   <div class="grid-item">
@@ -111,7 +122,7 @@ foreach ($data as $champImage) { ?>
 <script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
 <script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
 
-<script src="Javascript/home.js" type="text/javascript"></script>
-
+<script src="Views/Javascript/home.js" type="text/javascript"></script>
+<?php include 'Views/footer_pagination.php'; ?>
 </body>
 </html>
