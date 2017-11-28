@@ -25,14 +25,14 @@ class userController
       }else {
         session_start();
         $_SESSION['error']="";
-        header("index.php?action=home");
+        header("location:index.php?action=home");
       }
 
     }else {
 
       session_start();
       $_SESSION['error']="invalid pseudo / password";
-      header("index.php?action=login");
+      header("location:index.php?action=login");
 
     }
 
@@ -41,9 +41,9 @@ class userController
     {
       if ($this->validation->ids($pseudo,$password)) {
         $this->db->signUp($pseudo,$password);
-        header("index.php?action=login");
+        header("location:index.php?action=login");
       }else {
-        header("index.php?action=signup");
+        header("location:index.php?action=signup");
       }
     }
 
@@ -53,7 +53,7 @@ class userController
         include "Views/admin.php";
       }else{
         $this->db->logout();
-        header("index.php?action=login");
+        header("location:index.php?action=login");
       }
     }
     public function edit($id)
@@ -64,7 +64,7 @@ class userController
         include "Views/edit.php";
       }else{
         $this->db->logout();
-        header("index.php?action=login");
+        header("location:index.php?action=login");
       }
 
     }
