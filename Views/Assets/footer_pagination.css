@@ -1,9 +1,11 @@
-body{
+/*body{
 width: 100vw;
 height: 100vh;
-}
+}*/
 .pagination-container{
-  margin: 0 auto;width: 100%;display: block;
+  margin: 0 auto;
+  width:  s237px;;
+  display: block;
 }
 .fleche{
 
@@ -15,7 +17,10 @@ height: 100vh;
 
 }
 
-.numero-container div,a{
+.numero-container div{
+  margin-left:1px;
+}
+.numero-container a{
   margin-left:1px;
 }
 .numero{

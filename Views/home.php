@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="Views/Assets/home.css">
+	<link rel="stylesheet" href="Views/Assets/footer_pagination.css">
 	<title>test</title>
 	<meta name="viewport" content="width=device-width">
 </head>
