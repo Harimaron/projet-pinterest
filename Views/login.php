@@ -1,20 +1,36 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Login</title>
-            <link rel="stylesheet" href="Assets/login.css">
-            <script src="app.js"></script>
-            <meta charset="ISO-8859-1">
-      </head>
-      <body>
-      <div class="login-page">
-          <div class="form">
-            <form class="login-form" action="index.php?action=loginData" method="POST">
-              <input type="text" name="pseudo" placeholder="username"/>
-              <input type="password" name="password" placeholder="password"/>
-              <button>login</button>
-              <p class="message">Not registered? <a href="#">Create an account</a></p>
-            </form>
-          </div>
-        </div>
-      </body>
+<head>
+	<title>Login</title>
+	<link href="Assets/login.css" rel="stylesheet">
+	<link href="Assets/header.css" rel="stylesheet">
+	<link href="Assets/footer.css" rel="stylesheet" type="text/css">
+	<script src="app.js">
+	</script>
+	<meta charset="ISO-8859-1">
+</head>
+<body>
+	<!-- HEADER STARTS HERE -->
+	<div class="header-wrapper">
+		<a href="http://google.com">
+		<div class="logo-header"><img alt="logo" src="https://i.imgur.com/awbs7PX.png"></div></a> <a href="http://google.com">
+		<div class="upload-header"><img alt="logo" src="https://i.imgur.com/yKgtMFi.png"></div></a>
+		<div class="search-header">
+			<input name="search-header-bis" placeholder="" type="text">
+		</div><a href="http://google.com">
+		<div class="admin-header"><img alt="logo" src="https://i.imgur.com/PkGEZTB.png"></div></a> <a href="http://google.com">
+		<div class="logout-header"><img alt="logo" src="https://i.imgur.com/UJ1Y6RI.png"></div></a>
+	</div><!-- HEADER ENDS HERE -->
+	<div class="login-page">
+		<div class="form">
+			<form action="index.php?action=loginData" class="login-form">
+				<input placeholder="username" type="text"> <input placeholder="password" type="password"> <button>login</button>
+				<p class="message">Not registered? <a href="#">Create an account</a></p>
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="https://github.com/Harimaron/projet-pinterest/blob/master/README.md" target="blank">Devterest © 2017 All rights reserved.</a>
+	</div>
+</body>
 </html>
