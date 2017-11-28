@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
-	<link href="Assets/login.css" rel="stylesheet">
+	<title>Register</title>
+	<link href="Assets/signup.css" rel="stylesheet">
 	<link href="Assets/header.css" rel="stylesheet">
 	<link href="Assets/footer.css" rel="stylesheet" type="text/css">
 	<script src="app.js">
@@ -23,14 +23,16 @@
 	</div><!-- HEADER ENDS HERE -->
 	<div class="login-page">
 		<div class="form">
-			<form action="index.php?action=loginData" class="login-form" method="POST">
-				<input placeholder="username" name="pseudo" type="text"> <input placeholder="password" name="password" type="password"> <button>login</button>
-				<p class="message">Not registered? <a href="index.php?action=signup">Create an account</a></p>
+			<form action="index.php?action=signupData" class="register-form" method="post">
+				<input name="pseudo" placeholder="username" type="text"> <input name="password" placeholder="password" type="password"> <button>create</button>
+				<p class="message">Already registered? <a href="index.php?action=login">Sign In</a></p>
 			</form>
 		</div>
-	</div>
+  </div>
+  	<!-- FOOTER STARTS HERE -->
 	<div class="footer">
 		<a href="https://github.com/Harimaron/projet-pinterest/blob/master/README.md" target="blank">Devterest © 2017 All rights reserved.</a>
-	</div>
+  </div>
+    <!-- FOOTER ENDS HERE -->
 </body>
 </html>

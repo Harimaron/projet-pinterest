@@ -31,9 +31,9 @@ class photo
     return $resultat;
   }
 
-  public function deletePhotos($photoIdArray)
+  public function deletePhoto($photoId)
   {
-    $query="DELETE FROM images WHERE photo_id in (";
+  /*  $query="DELETE FROM images WHERE photo_id in (";
 
     for ($i=0; $i < count($photoIdArray); $i++) {
       $query=$query."?";
@@ -43,14 +43,23 @@ class photo
     }
     $query=$query.")";
     $req=$this->db->prepare($query);
-    $req->execute($photoIdArray);
+    $req->execute($photoIdArray);*/
+    $req=$this->db->prepare("DELETE FROM images WHERE photo_id = ? ");
+    $req->execute([$photoId])
+  }
+  public function getEditPhoto($photoId)
+  {
+    $req=$this->db->prepare("SELECT * FROM images WHERE photo_id LIKE ?");
+    $req->execute([$photoId]);
+    $resultat=$req->fetchObject();
+    return $resultat;
   }
   public function editPhoto($photoId,$title,$description)
   {
     if (empty($title) || empty($description)) {
       return false;
     }else {
-      $req=$this->db->prepare("UPDATE images SET title = :title , description= :description WHERE iamges_uid = :photoId ");
+      $req=$this->db->prepare("UPDATE images SET title = :title , description= :description WHERE photo_id = :photoId ");
       $req->execute([':title'=>$title,':description'=>$description,':photoId'=>$photoId]);
       return true;
     }

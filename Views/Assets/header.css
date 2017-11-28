@@ -17,9 +17,7 @@ body {
 
 .logo-header {
     order: 1;
-    height: 100%;
-    background-color: white;
-    border-radius: 30px;
+    height: 50px;
 }
 
 .logo-header:hover {
@@ -30,12 +28,10 @@ img {
 }
 
 .search-header {
-    order: 2;
     align-self: center;
 }
 
 .search-header input[type=text] {
-    order: 2;
     align-self: center;
     width: 800px;
     box-sizing: border-box;
@@ -51,20 +47,29 @@ img {
     color: silver;
 }
 
-.settings-header {
+.admin-header {
     order: 4;
-    height: 100%;
+    height: 50px;
 }
     
-.settings-header:hover {
+.admin-header:hover {
     cursor:  pointer;
 }
 
 .upload-header {
     order: 3;
-    height: 100%;
+    height: 50px;
 }
 
 .upload-header:hover {
+    cursor:  pointer;
+}
+
+.logout-header {
+    order: 3;
+    height: 50px;
+}
+
+.logout-header:hover {
     cursor:  pointer;
 }

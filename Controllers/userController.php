@@ -56,6 +56,18 @@ class userController
         include 'Views/login.php';
       }
     }
+    public function edit($id)
+    {
+      if ($_SESSION["admin"]) {
+        $photo=new photo();
+        $edit=$photo->getEditPhoto($id);
+        include "Views/edit.php";
+      }else{
+        $this->db->logout();
+        include 'Views/login.php';
+      }
+
+    }
     public function photoForm()
     {
       if ($_SESSION["logged"]) {

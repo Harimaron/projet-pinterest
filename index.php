@@ -41,6 +41,14 @@ switch($action)
   case 'updloadData':
     $photoController->upLoad($_FILES["url"],$_POST["titre"],$_POST["description"]);
     break;
+    case 'edit':
+      $userController->edit($id);
+    break;
+    case 'editData':
+      $photoController->editPhoto($title,$description,$id);
+    break;
+    case 'deletePhoto':
+      $photoController->deletePhoto($id);
   default:
     include "Views/login.php";
   break;

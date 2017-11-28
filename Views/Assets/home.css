@@ -63,7 +63,7 @@ a{
   background-color: #EFEFEF;
 }
 
-a:hover{ 
+a:hover{
     transform: translateY(-5px);
     transition: 0.2s;
 }

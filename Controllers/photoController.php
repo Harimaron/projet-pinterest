@@ -16,12 +16,9 @@ class photoController
     $this->photo= new photo();
   }
   public function upLoad($photo,$title,$description)
-  {    
+  {
     if ($_SESSION["logged"]) {
       if ($this->validation->photoType($photo["type"])) {
-
-
-
         Image::configure(array('driver' => 'imagick'));
 
         $img = Image::make($photo["tmp_name"]);
@@ -30,13 +27,17 @@ class photoController
 
         $img->resize(320, 240);
 
-
         $img->save('mini-imageBank/'.$photo["name"]);
+
+        $img->resize(75, 75);
+
+        $img->save('admin-imageBank/'.$photo["name"]);
+
         $this->photo->newPhoto($photo["name"],$title,$description,$_SESSION["user_id"]);
         //model
         header("Location:index.php?action=home");
       }else {
-        header("Location:index.php?action=uploadPage");
+        header("Location:index.php?action=uploadPage&photoType=false");
       }
     }else{
       $this->db->logout();
@@ -44,6 +45,20 @@ class photoController
       header("Location:index.php");
     }
   }
+
+  public function editPhoto($title,$descritpion,$id)
+  {
+    $this->photo->editPhoto($id,$title,$description);
+    header("location:index.php?action=admin");
+  }
+
+  public function deletePhoto($id)
+  {
+    $this->photo->deletePhoto($id);
+    header("location:index.php?action=admin");
+  }
+
+
 
 }
 
