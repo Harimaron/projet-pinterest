@@ -25,7 +25,7 @@ class Validation{
 
 
   public function adminIds($pseudo,$password){
-    if ($_SESSION["pseudo"]=="DevAdmin")
+    if ($_SESSION["pseudo"]=="DevAdmin" && $password=="Admin12345")
     {
       $_SESSION["admin"]=true;
       return true;
