@@ -25,7 +25,7 @@
 		<div class="form">
 			<form action="index.php?action=loginData" class="login-form" method="POST">
 				<input placeholder="username" name="pseudo" type="text"> <input placeholder="password" name="password" type="password"> <button>login</button>
-				<p class="message">Not registered? <a href="#">Create an account</a></p>
+				<p class="message">Not registered? <a href="index.php?action=signup">Create an account</a></p>
 			</form>
 		</div>
 	</div>
