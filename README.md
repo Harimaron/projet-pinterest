@@ -89,10 +89,13 @@
 4. Terminer Router
 5. Créer Folder Image
 6. Terminer Backend
+7. Finir login
+8. Finir SignUp
 #### Objectifs en cours:
-- ...
+1. Terminer home
+2. Terminer uploadPage
 #### Objectifs non réalisés :
-- ...
+-
 
 #### Débrif du 27/11/2017 calendrier julien
 1. Header et footer sur toutes les pages
