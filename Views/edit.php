@@ -6,20 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<?php
 
-if( $_SERVER['REQUEST_METHOD'] == "GET"){
-extract($_GET);
-
-
-}
-?>
 <body>
-  <form action="index.php?action=editData">
+  <form action="index.php?action=editData" method="POST">
 
-  <input type="text" name="title" value=<?php echo $edit['title']; ?>/>
-  <input type="description" name="descritpion" value=<?php echo $edit['description']; ?>/>
-  <input type="hidden" name="id" value=<?php echo $edit['photo_id'];  ?>
+  <input type="text" name="title" value="<?php echo $edit['title']; ?>"/>
+  <input type="description" name="description" value="<?php echo $edit['description']; ?>"/>
+  <input type="hidden" name="id" value="<?php echo $edit['photo_id'];  ?>" />
   <input type="submit" value="Edit"/>
 
 

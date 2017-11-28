@@ -46,7 +46,7 @@ class photoController
     }
   }
 
-  public function editPhoto($title,$descritpion,$id)
+  public function editPhoto($title,$description,$id)
   {
     $this->photo->editPhoto($id,$title,$description);
     header("location:index.php?action=admin");

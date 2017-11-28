@@ -51,16 +51,16 @@ class photo
   {
     $req=$this->db->prepare("SELECT * FROM images WHERE photo_id LIKE ?");
     $req->execute([$photoId]);
-    $resultat=$req->fetchObject();
-    return $resultat;
+    $resultat=$req->fetchAll();
+    return $resultat[0];
   }
   public function editPhoto($photoId,$title,$description)
   {
     if (empty($title) || empty($description)) {
       return false;
     }else {
-      $req=$this->db->prepare("UPDATE images SET title = :title , description= :description WHERE photo_id = :photoId ");
-      $req->execute([':title'=>$title,':description'=>$description,':photoId'=>$photoId]);
+      $req=$this->db->prepare("UPDATE images SET title = ? , description= ? WHERE photo_id = ? ");
+      $req->execute([$title,$description,$photoId]);
       return true;
     }
   }

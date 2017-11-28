@@ -49,6 +49,7 @@ switch($action)
     break;
     case 'deletePhoto':
       $photoController->deletePhoto($id);
+    break;
   default:
     include "Views/login.php";
   break;
