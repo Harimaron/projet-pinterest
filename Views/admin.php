@@ -27,96 +27,19 @@
 <?php
 foreach ($data as $champImage) { ?>
 
-	<a class="grid-item" href="#" title="titre">
-		<figure>
+	<div class="grid-item" href="#" title="titre">
+		<div>
 		<img src="<?php echo "mini-imageBank/".$champImage['url']; ?>">
-		<figcaption><?php echo $champImage['title']; ?></figcaption>
-		<a href="index.php?action=edit&id=<?php echo $champImage['photo_id'];?>">edit</a><a href="index.php?action=deletePhoto&id=<?php echo $champImage['photo_id'];?>">delete</a>
-		</figure>
-	</a>
+		<div>
+			<?php echo $champImage['title']; ?>
+		</div>
+	</div>
+		<a href="index.php?action=edit&id=<?php echo $champImage['photo_id'];?>">edit</a>
+		<a href="index.php?action=deletePhoto&id=<?php echo $champImage['photo_id'];?>">delete</a>
+
+	</div>
 <?php
 } ?>
-
-  <div class="grid-item">
-   <a href="#">
-     <figure>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
-      <figcaption>Description</figcaption>
-    </figure>
-  </a>
-  </div>
-
-  <div class="grid-item">
-  	<a href="#">
-  	<figure>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-     <figcaption>Description</figcaption>
-	</figure>
-	</a>
-  </div>
-
-  <div class="grid-item">
-  	<a href="#">
-  	<figure>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-     <figcaption>Description</figcaption>
-	</figure>
-	</a>
-  </div>
-
-  <div class="grid-item">
-  	<a href="#">
-  	<figure>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-     <figcaption>Description</figcaption>
-	</figure>
-	</a>
-  </div>
-
-  <div class="grid-item">
-  	<a href="#">
-  	<figure>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-     <figcaption>Description</figcaption>
-	</figure>
-	</a>
-  </div>
-
-  <div class="grid-item">
-  	<a href="#">
-  	<figure>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-     <figcaption>Description</figcaption>
-	</figure>
-	</a>
-  </div>
-
-  <div class="grid-item">
-  	<a href="#">
-  	<figure>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-     <figcaption>Description</figcaption>
-	</figure>
-	</a>
-  </div>
-
-  <div class="grid-item">
-  	<a href="#">
-  	<figure>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-     <figcaption>Description</figcaption>
-	</figure>
-	</a>
-  </div>
-
-  <div class="grid-item">
-  	<a href="#">
-  	<figure>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-     <figcaption>Description</figcaption>
-	</figure>
-	</a>
-  </div>
 
 </div>
 

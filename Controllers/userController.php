@@ -50,6 +50,7 @@ class userController
     public function admin()
     {
       if ($_SESSION["admin"]) {
+        $data=$this->photo->getAllImage();
         include "Views/admin.php";
       }else{
         $this->db->logout();
