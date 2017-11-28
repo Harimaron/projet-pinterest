@@ -14,9 +14,7 @@
 	  <div class="grid-sizer"></div>
 
 	<?php
-	$data=[];
 	foreach ($data as $champImage) { ?>
-
 		<a class="grid-item" href="#" title="titre">
 			<figure>
 			<img src="<?php echo "mini-imageBank/".$champImage['url']; ?>">
