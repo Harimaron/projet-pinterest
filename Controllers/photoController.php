@@ -16,7 +16,7 @@ class photoController
     $this->photo= new photo();
   }
   public function upLoad($photo,$title,$description)
-  {    
+  {
     if ($_SESSION["logged"]) {
       if ($this->validation->photoType($photo["type"])) {
 
@@ -30,8 +30,12 @@ class photoController
 
         $img->resize(320, 240);
 
-
         $img->save('mini-imageBank/'.$photo["name"]);
+
+        $img->resize(75, 75);
+
+        $img->save('admin-imageBank/'.$photo["name"]);
+
         $this->photo->newPhoto($photo["name"],$title,$description,$_SESSION["user_id"]);
         //model
         header("Location:index.php?action=home");
