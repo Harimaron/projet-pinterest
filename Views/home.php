@@ -12,7 +12,7 @@
   <div class="grid-sizer"></div>
 
 <?php
-$data=[];
+//$data=[];
 foreach ($data as $champImage) { ?>
 
 	<a class="grid-item" href="#" title="titre">
@@ -23,13 +23,14 @@ foreach ($data as $champImage) { ?>
 	</a>
 <?php
 } ?>
-
+<!--
   <div class="grid-item"> 
   	<a href="#">
   	<figure>
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
     <figcaption>Description</figcaption>
 	</figure>
+					<figcaption>Description</figcaption>
 	</a>
   </div>
 
@@ -39,6 +40,7 @@ foreach ($data as $champImage) { ?>
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
      <figcaption>Description</figcaption>
 	</figure>
+					<figcaption>Description</figcaption>
 	</a>
   </div>
 
@@ -48,6 +50,7 @@ foreach ($data as $champImage) { ?>
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
      <figcaption>Description</figcaption>
 	</figure>
+					<figcaption>Description</figcaption>
 	</a>
   </div>
 
@@ -57,6 +60,7 @@ foreach ($data as $champImage) { ?>
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
      <figcaption>Description</figcaption>
 	</figure>
+					<figcaption>Description</figcaption>
 	</a>
   </div>
 
@@ -66,6 +70,7 @@ foreach ($data as $champImage) { ?>
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
      <figcaption>Description</figcaption>
 	</figure>
+					<figcaption>Description</figcaption>
 	</a>
   </div>
 
@@ -75,6 +80,7 @@ foreach ($data as $champImage) { ?>
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
      <figcaption>Description</figcaption>
 	</figure>
+					<figcaption>Description</figcaption>
 	</a>
   </div>
 
@@ -84,9 +90,9 @@ foreach ($data as $champImage) { ?>
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
      <figcaption>Description</figcaption>
 	</figure>
+					<figcaption>Description</figcaption>
 	</a>
   </div>
-
   <div class="grid-item">
   	<a href="#">
   	<figure>

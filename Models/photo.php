@@ -24,7 +24,8 @@ class photo
 
   public function getAllImage($search='')
   {
-    $req=$this->db->prepare("SELECT * FROM images WHERE description LIKE'%(?)%'");
+    $req=$this->db->prepare("SELECT * FROM images WHERE description LIKE ?");
+    $search='%'.$search.'%';
     $req->execute([$search]);
     $resultat=$req->fetchAll();
     return $resultat;
@@ -35,13 +36,12 @@ class photo
     $query="DELETE FROM images WHERE photo_id in (";
 
     for ($i=0; $i < count($photoIdArray); $i++) {
-      $query=$query+"?";
+      $query=$query."?";
       if ($i != count($photoIdArray)-1) {
-        $query=$query+",";
+        $query=$query.",";
       }
     }
-    $query=$query+")";
-
+    $query=$query.")";
     $req=$this->db->prepare($query);
     $req->execute($photoIdArray);
   }

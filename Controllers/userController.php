@@ -16,7 +16,7 @@ class userController
   }
   public function login($pseudo,$password) {
 
-    if ($this->db->SignIn()) {
+    if ($this->db->SignIn($pseudo,$password)) {
 
       if ($this->validation->adminIds($pseudo,$password)) {
         session_start();
@@ -40,7 +40,7 @@ class userController
     public function signUp($pseudo,$password)
     {
       if ($this->validation->ids($pseudo,$password)) {
-        $this->db->signUp($pseudo,$password);
+        var_dump($this->db->signUp($pseudo,$password));
         include "Views/login.php";
       }else {
         include "Views/signup.php";
@@ -66,8 +66,10 @@ class userController
     }
     public function home()
     {
+    //session_start();
       if ($_SESSION["logged"]) {
         $data=$this->photo->getAllImage();
+        //echo "HOME logged";
         include 'Views/home.php';
       }else {
         header("location:index.php");

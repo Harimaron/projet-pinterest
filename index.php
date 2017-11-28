@@ -5,6 +5,7 @@ include 'Helper/Validation.php';
 include 'Models/db.php';
 include 'Models/photo.php';
 require 'vendor/autoload.php';
+session_start();
   use Intervention\Image\ImageManagerStatic as Image;
 
 $action="";
@@ -28,9 +29,12 @@ switch($action)
     $userController->home();
   break;
   case 'signup':
-    //include 'Views/signup.php';
-    $userController->signUp($pseudo,$password);
+    include 'Views/signup.php';
   break;
+  case 'signupData':
+    echo $pseudo;echo $password;
+    $userController->signUp($pseudo,$password);
+    break;
   case 'uploadPage':
     $userController->photoForm();
   break;
@@ -42,4 +46,5 @@ switch($action)
   break;
 }
 
+//var_dump($_SESSION);
 ?>
