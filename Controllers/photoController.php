@@ -19,9 +19,6 @@ class photoController
   {
     if ($_SESSION["logged"]) {
       if ($this->validation->photoType($photo["type"])) {
-
-
-
         Image::configure(array('driver' => 'imagick'));
 
         $img = Image::make($photo["tmp_name"]);
@@ -40,7 +37,7 @@ class photoController
         //model
         header("Location:index.php?action=home");
       }else {
-        header("Location:index.php?action=uploadPage");
+        header("Location:index.php?action=uploadPage&photoType=false");
       }
     }else{
       $this->db->logout();

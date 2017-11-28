@@ -23,8 +23,8 @@
 	</div><!-- HEADER ENDS HERE -->
 	<div class="login-page">
 		<div class="form">
-			<form action="index.php?action=loginData" class="login-form">
-				<input placeholder="username" type="text"> <input placeholder="password" type="password"> <button>login</button>
+			<form action="index.php?action=loginData" class="login-form" method="POST">
+				<input placeholder="username" name="pseudo" type="text"> <input placeholder="password" name="password" type="password"> <button>login</button>
 				<p class="message">Not registered? <a href="#">Create an account</a></p>
 			</form>
 		</div>
