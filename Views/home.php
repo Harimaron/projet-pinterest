@@ -12,7 +12,6 @@
   <div class="grid-sizer"></div>
 
 <?php
-$data=[];
 foreach ($data as $champImage) { ?>
 
 	<a class="grid-item" href="#" title="titre">
@@ -24,13 +23,13 @@ foreach ($data as $champImage) { ?>
 <?php
 } ?>
 
-  <div class="grid-item"> 
+  <div class="grid-item">
    <a href="#">
-     <figure> 
+     <figure>
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
       <figcaption>Description</figcaption>
     </figure>
-  </a> 
+  </a>
   </div>
 
   <div class="grid-item">

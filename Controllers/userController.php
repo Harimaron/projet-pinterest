@@ -83,6 +83,8 @@ class userController
       if ($_SESSION["logged"]) {
         $data=$this->photo->getAllImage();
         //echo "HOME logged";
+        var_dump($data);
+        echo "<br>";
         include 'Views/home.php';
       }else {
         header("location:index.php");
