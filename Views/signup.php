@@ -10,6 +10,7 @@
 	<meta charset="ISO-8859-1">
 </head>
 <body>
+
 	<!-- HEADER STARTS HERE -->
 	<div class="header-wrapper">
 		<a href="index.php?action=home">
@@ -24,9 +25,11 @@
 	<div class="login-page">
 		<div class="form">
 			<form action="index.php?action=signupData" class="register-form" method="post">
-				<input name="pseudo" placeholder="username" type="text"> <input name="password" placeholder="password" type="password"> <button>create</button>
-				<p class="message">Already registered? <a href="index.php?action=login">Sign In</a></p>
+				<input name="pseudo" placeholder="username" type="text"> <input name="password" placeholder="password" type="password">
+				<input type="submit" value="signUp"/>
 			</form>
+				<p class="message">Already registered? <a href="index.php?action=login">Sign In</a></p>
+
 		</div>
   </div>
   	<!-- FOOTER STARTS HERE -->

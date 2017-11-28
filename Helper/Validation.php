@@ -7,7 +7,7 @@ class Validation{
     {
         session_start();
         if (!preg_match("/^[0-9a-zA-Z_]{5,250}$/", $pseudo)) {
-            $errors="Votre pseudo doit contenir au minimum 5 caractères";
+            $errors="Votre pseudo doit contenir au minimum 5 caractères et pas de majuscule";
 
             $_SESSION["errors"] = $errors;
             return false;
