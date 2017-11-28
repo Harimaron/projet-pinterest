@@ -14,7 +14,6 @@
 	  <div class="grid-sizer"></div>
 
 	<?php
-	var_dump($data);
 	foreach ($data as $champImage) { ?>
 		<a class="grid-item" href="#" title="titre">
 			<figure>
