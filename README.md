@@ -93,3 +93,9 @@
 - ...
 #### Objectifs non réalisés :
 - ...
+
+#### Débrif du 27/11/2017 calendrier julien
+1. Header et footer sur toutes les pages
+2. Corrigé le backend pour home.php
+3. Home.php Grid marchent avec mansonry.js
+4. Heroku presque
