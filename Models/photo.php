@@ -45,6 +45,13 @@ class photo
     $req=$this->db->prepare($query);
     $req->execute($photoIdArray);
   }
+  public function getEditPhoto($photoId)
+  {
+    $req=$this->db->prepare("SELECT * FROM images WHERE photo_id LIKE ?");
+    $req->execute([$photoId]);
+    $resultat=$req->fetchObject();
+    return $resultat;
+  }
   public function editPhoto($photoId,$title,$description)
   {
     if (empty($title) || empty($description)) {
