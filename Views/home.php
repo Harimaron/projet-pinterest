@@ -2,82 +2,116 @@
 <html>
 <head>
 	<link rel="stylesheet" href="Assets/home.css">
-	<title></title>
+	<title>test</title>
+	<meta name="viewport" content="width=device-width">
 </head>
 <body>
 
-	<main>
-		<div class="grid">
-<!-- 
+<div class="grid">
+
+  <div class="grid-sizer"></div>
+
 <?php
 $data=[];
 foreach ($data as $champImage) { ?>
 
-			<a class="grid-item" href="#" title="titre">
-				  	<figure>
-						<img src="<?php echo "mini-imageBank/".$champImage['url']; ?>">
-						<h1> <?php echo $champImage['title']; ?> </h1> 
-					</figure>
-			</a>
+	<a class="grid-item" href="#" title="titre">
+		<figure>
+		<img src="<?php echo "mini-imageBank/".$champImage['url']; ?>">
+		<figcaption><?php echo $champImage['title']; ?></figcaption>
+		</figure>
+	</a>
 <?php
-} ?> -->
+} ?>
 
-			<a class="grid-item" href="#" title="titre">
-				  	<figure>
-						<img src="http://placehold.it/700x500">
-						<figcaption>Description</figcaption>
-					</figure>	
-			</a>
+  <div class="grid-item"> 
+  	<a href="#">
+  	<figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+    <figcaption>Description</figcaption>
+	</figure>
+	</a>
+  </div>
 
-			<a class="grid-item" href="#" title="titre">
-				  	<figure>
-						<img src="http://placehold.it/350x350">
-						<figcaption>Description</figcaption>
-					</figure>
-			</a>
+  <div class="grid-item">
+  	<a href="#">
+  	<figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+     <figcaption>Description</figcaption>
+	</figure>
+	</a>
+  </div>
 
-			<a class="grid-item" href="#" title="titre">
-				  	<figure>
-						<img src="http://placehold.it/350x440">
-						<figcaption>Description</figcaption>
-					</figure>
-			</a>
+  <div class="grid-item">
+  	<a href="#">
+  	<figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+     <figcaption>Description</figcaption>
+	</figure>
+	</a>
+  </div>
 
-			<a class="grid-item" href="#" title="titre">
-				  	<figure>
-						<img src="http://placehold.it/500x100">
-						<figcaption>Description</figcaption>
-					</figure>	
-			</a>
+  <div class="grid-item">
+  	<a href="#">
+  	<figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+     <figcaption>Description</figcaption>
+	</figure>
+	</a>
+  </div>
 
-			<a class="grid-item" href="#" title="titre">
-				  	<figure>
-						<img src="http://placehold.it/400x250">
-						<figcaption>Description</figcaption>
-					</figure>		
-			</a>
+  <div class="grid-item">
+  	<a href="#">
+  	<figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+     <figcaption>Description</figcaption>
+	</figure>
+	</a>
+  </div>
 
-			<a class="grid-item" href="#" title="titre">
-				  	<figure>
-						<img src="http://placehold.it/850x150">
-						<figcaption>Description</figcaption>
-					</figure>	
-			</a>
+  <div class="grid-item">
+  	<a href="#">
+  	<figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+     <figcaption>Description</figcaption>
+	</figure>
+	</a>
+  </div>
 
-			<a class="grid-item" href="#" title="titre">
-				  	<figure>
-						<img src="http://placehold.it/350x440">
-						<figcaption>Description</figcaption>
-					</figure>	
-			</a>
+  <div class="grid-item">
+  	<a href="#">
+  	<figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+     <figcaption>Description</figcaption>
+	</figure>
+	</a>
+  </div>
 
-		</div>
-	</main>
+  <div class="grid-item">
+  	<a href="#">
+  	<figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+     <figcaption>Description</figcaption>
+	</figure>
+	</a>
+  </div>
 
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <div class="grid-item">
+  	<a href="#">
+  	<figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+     <figcaption>Description</figcaption>
+	</figure>
+	</a>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
+<script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
 
 <script src="Javascript/home.js" type="text/javascript"></script>
-<script src="Javascript/libraryHome.js" type="text/javascript"></script>
 
 </body>
 </html>
