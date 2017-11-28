@@ -25,26 +25,25 @@ class userController
       }else {
         session_start();
         $_SESSION['error']="";
-        include "index.php?action=home";
+        header("index.php?action=home");
       }
 
     }else {
 
       session_start();
       $_SESSION['error']="invalid pseudo / password";
-      include "Views/login.php";
+      header("index.php?action=login");
 
     }
 
   }
     public function signUp($pseudo,$password)
     {
-      var_dump($this->validation->ids($pseudo,$password));
       if ($this->validation->ids($pseudo,$password)) {
         $this->db->signUp($pseudo,$password);
-        include "Views/login.php";
+        header("index.php?action=login");
       }else {
-        include "Views/signup.php";
+        header("index.php?action=signup");
       }
     }
 
@@ -54,7 +53,7 @@ class userController
         include "Views/admin.php";
       }else{
         $this->db->logout();
-        include 'Views/login.php';
+        header("index.php?action=login");
       }
     }
     public function edit($id)
@@ -65,7 +64,7 @@ class userController
         include "Views/edit.php";
       }else{
         $this->db->logout();
-        include 'Views/login.php';
+        header("index.php?action=login");
       }
 
     }
@@ -83,7 +82,6 @@ class userController
       if ($_SESSION["logged"]) {
         $data=$this->photo->getAllImage();
         //echo "HOME logged";
-        echo "<br>";
         include 'Views/home.php';
       }else {
         header("location:index.php");
