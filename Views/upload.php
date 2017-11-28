@@ -23,7 +23,7 @@
 
 
 		<div class="input-file-container">
-			<input class="input-file" id="my-file" type="file">
+			<input class="input-file" id="my-file" name="url" type="file">
 			<label class="uploadLabel" tabindex="0" for="my-file" class="input-file-trigger">
 				<img src="Assets/images/upload.png" alt="" /><br> Select a file...</label>
 		</div>
