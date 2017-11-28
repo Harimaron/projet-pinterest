@@ -23,15 +23,9 @@
 	</div><!-- HEADER ENDS HERE -->
 	<div class="login-page">
 		<div class="form">
-<<<<<<< HEAD
 			<form action="index.php?action=loginData" class="login-form" method="POST">
 				<input placeholder="username" name="pseudo" type="text"> <input placeholder="password" name="password" type="password"> <button>login</button>
 				<p class="message">Not registered? <a href="#">Create an account</a></p>
-=======
-			<form action="index.php?action=loginData" class="login-form">
-				<input placeholder="username" type="text"> <input placeholder="password" type="password"> <button>login</button>
-				<p class="message">Not registered? <a href="index.php?action=signup">Create an account</a></p>
->>>>>>> 9f972f7cadc5b73ff87d94968be3744421ceb60c
 			</form>
 		</div>
 	</div>
