@@ -31,9 +31,9 @@ class photo
     return $resultat;
   }
 
-  public function deletePhotos($photoIdArray)
+  public function deletePhoto($photoId)
   {
-    $query="DELETE FROM images WHERE photo_id in (";
+  /*  $query="DELETE FROM images WHERE photo_id in (";
 
     for ($i=0; $i < count($photoIdArray); $i++) {
       $query=$query."?";
@@ -43,7 +43,9 @@ class photo
     }
     $query=$query.")";
     $req=$this->db->prepare($query);
-    $req->execute($photoIdArray);
+    $req->execute($photoIdArray);*/
+    $req=$this->db->prepare("DELETE FROM images WHERE photo_id = ? ");
+    $req->execute([$photoId])
   }
   public function getEditPhoto($photoId)
   {
