@@ -11,7 +11,7 @@
 				<div class="upload-header"><img alt="logo" src="https://i.imgur.com/yKgtMFi.png"></div></a>
 				<div class="search-header">
 					<input name="search-header-bis" placeholder="" type="text">
-				</div><a href="http://google.com">
+				</div><a href="index.php?action=admin">
 				<div class="admin-header"><img alt="logo" src="https://i.imgur.com/PkGEZTB.png"></div></a> <a href="index.php?action=logout">
 				<div class="logout-header"><img alt="logo" src="https://i.imgur.com/UJ1Y6RI.png"></div></a>
 			</div><!-- HEADER ENDS HERE -->
