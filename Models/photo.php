@@ -45,7 +45,7 @@ class photo
     $req=$this->db->prepare($query);
     $req->execute($photoIdArray);*/
     $req=$this->db->prepare("DELETE FROM images WHERE photo_id = ? ");
-    $req->execute([$photoId])
+    $req->execute([$photoId]);
   }
   public function getEditPhoto($photoId)
   {

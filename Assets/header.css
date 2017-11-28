@@ -1,0 +1,75 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-wrapper {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo-header {
+    order: 1;
+    height: 50px;
+}
+
+.logo-header:hover {
+    cursor:  pointer;
+}
+img {
+    height: 100%;
+}
+
+.search-header {
+    align-self: center;
+}
+
+.search-header input[type=text] {
+    align-self: center;
+    width: 800px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius:  50px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 11px 20px 11px 50px;
+    background-image: url("https://cdn.xplace.com/images/magnifying_glass_gray.svg");
+    background-size:3%;
+    color: silver;
+}
+
+.admin-header {
+    order: 4;
+    height: 50px;
+}
+    
+.admin-header:hover {
+    cursor:  pointer;
+}
+
+.upload-header {
+    order: 3;
+    height: 50px;
+}
+
+.upload-header:hover {
+    cursor:  pointer;
+}
+
+.logout-header {
+    order: 3;
+    height: 50px;
+}
+
+.logout-header:hover {
+    cursor:  pointer;
+}

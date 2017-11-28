@@ -39,8 +39,9 @@ class userController
   }
     public function signUp($pseudo,$password)
     {
+      var_dump($this->validation->ids($pseudo,$password));
       if ($this->validation->ids($pseudo,$password)) {
-        var_dump($this->db->signUp($pseudo,$password));
+        $this->db->signUp($pseudo,$password);
         include "Views/login.php";
       }else {
         include "Views/signup.php";
