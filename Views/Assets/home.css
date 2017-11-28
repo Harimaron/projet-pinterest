@@ -55,9 +55,24 @@ a{
 	text-decoration: none;
 }
 
+.grid-item:hover{
+  border-radius: 10px;
+  padding-left:6px;
+  padding-right:6px;
+  padding-top:6px;
+  background-color: #EFEFEF;
+}
+
 a:hover{ 
     transform: translateY(-5px);
     transition: 0.2s;
+}
+
+img:hover{
+	opacity:0.8;
+	-moz-transition: opacity 0.7s;
+	-webkit-transition: opacity 0.7s;
+	-o-transition: opacity 0.7s;
 }
 
 /* ---- Media Queries---- */

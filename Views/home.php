@@ -25,12 +25,12 @@ foreach ($data as $champImage) { ?>
 } ?>
 
   <div class="grid-item"> 
-  	<a href="#">
-  	<figure>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
-    <figcaption>Description</figcaption>
-	</figure>
-	</a>
+   <a href="#">
+     <figure> 
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+      <figcaption>Description</figcaption>
+    </figure>
+  </a> 
   </div>
 
   <div class="grid-item">
