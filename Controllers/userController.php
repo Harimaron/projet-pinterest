@@ -25,7 +25,7 @@ class userController
       }else {
         session_start();
         $_SESSION['error']="";
-        include "Views/home.php";
+        include "index.php?action=home";
       }
 
     }else {
