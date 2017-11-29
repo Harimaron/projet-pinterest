@@ -4,8 +4,11 @@
 	<link rel="stylesheet" href="Assets/home.css">
   <link href="Assets/header.css" rel="stylesheet">
 	<link href="Assets/footer.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="Assets/remodal.css">
+	<link rel="stylesheet" href="Assets/remodal-default-theme.css">
 	<title>test</title>
 	<meta name="viewport" content="width=device-width">
+
 </head>
 <body>
 	<!-- HEADER STARTS HERE -->
@@ -27,12 +30,20 @@
 <?php
 foreach ($data as $champImage) { ?>
 
-	<a class="grid-item" href="#" title="titre">
+	<a class="grid-item" data-remodal-target="<?php echo $champImage['photo_id']; ?>"  title="titre">
 		<figure>
 		<img src="<?php echo "mini-imageBank/".$champImage['url']; ?>">
 		<figcaption><?php echo $champImage['title']; ?></figcaption>
 		</figure>
 	</a>
+	<div class="remodal" data-remodal-id="<?php echo $champImage['photo_id']; ?>">
+		  <button data-remodal-action="close" class="remodal-close"></button>
+			<h1><?php echo $champImage['title']; ?></h1>
+			<p><?php echo $champImage['description']; ?></p>
+			<img style="width:100%;" src="big-imageBank/<?php echo  $champImage['url'];?>" alt="">
+			<button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+			<button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+	</div>
 <?php
 } ?>
 
@@ -127,5 +138,6 @@ foreach ($data as $champImage) { ?>
 <div class="footer">
 	<a href="https://github.com/Harimaron/projet-pinterest/blob/master/README.md" target="blank">Devterest © 2017 All rights reserved.</a>
 </div>
+<script src="Assets/remodal.min.js" charset="utf-8"></script>
 </body>
 </html>
