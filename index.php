@@ -5,6 +5,8 @@ include 'Helper/Validation.php';
 include 'Models/db.php';
 include 'Models/photo.php';
 require 'vendor/autoload.php';
+
+//include "Views/header.php";
 session_start();
   use Intervention\Image\ImageManagerStatic as Image;
 
@@ -50,6 +52,9 @@ switch($action)
     case 'deletePhoto':
       $photoController->deletePhoto($id);
     break;
+    case 'logout':
+      $userController->logout();
+      break;
   default:
     include "Views/login.php";
   break;

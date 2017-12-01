@@ -102,28 +102,3 @@
 2. Corrigé le backend pour home.php
 3. Home.php Grid marchent avec mansonry.js
 4. Heroku presque
-
-
-### Lundi 28
-#### Objectifs :
-1. terminer page upload
-2. créer admin image bank
-3. Finir home ave Maçon
-4. faire un footer paginiation
-5. Tout mettre ensemble
-6. Terminer Home Button
-7.Terminer admin
-8. Ajouter header footer à toutes les pages
-9. faire page edit + delete
-
-#### Objectifs réalisés :
-1. terminer page upload
-2. créer admin image bank
-3. Finir home ave Maçon
-4. faire un footer paginiation
-5. Tout mettre ensemble
-6. Terminer Home Button
-7.Terminer admin
-8. Ajouter header footer à toutes les pages
-9. faire page edit + delete
-
