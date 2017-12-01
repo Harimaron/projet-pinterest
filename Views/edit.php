@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset='utf-8'>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="Assets/header.css">
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="Javascript/header.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="Assets/upload.css">
+	<link href="Assets/signup.css" rel="stylesheet">
+	<link href="Assets/header.css" rel="stylesheet">
+	<link href="Assets/footer.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <!-- header -->
-<div id='cssmenu'>
-<ul>
-   <li><a href='index.php?action=home'>Home</a></li>
-   <li class='active'><a href='index.php?action=uploadPage'>Upload</a>
-   <li><a href='index.php?action=admin'>Admin</a></li>
-   <li><a href='index.php?action=logout'>Logout</a></li>
-</ul>
-</div>
-<!-- header -->
+
+<!--
+    <div class="header-wrapper">
+        <a href="index.php?action=home">
+        <div class="logo-header"><img alt="logo" src="https://i.imgur.com/awbs7PX.png"></div></a> <a href="index.php?action=uploadPage">
+        <div class="upload-header"><img alt="logo" src="https://i.imgur.com/yKgtMFi.png"></div></a>
+        <div class="search-header">
+          <input name="search-header-bis" placeholder="" type="text">
+        </div><a href="index.php?action=admin">
+        <div class="admin-header"><img alt="logo" src="https://i.imgur.com/PkGEZTB.png"></div></a> <a href="index.php?action=logout">
+        <div class="logout-header"><img alt="logo" src="https://i.imgur.com/UJ1Y6RI.png"></div></a>
+      </div>
+     -->
+     <?php include "Views/header.php" ?>
+    <div style="margin-top:4%;" class="space"></div>
+    <div class="formWrapper">
+    <header class="uploadHeader"> <img src="Assets/images/logo.png" alt=""> <h2>Edit</h2> </header>
+
+
+      <div class="input-file-container"></div>
+
+
   <form action="index.php?action=editData" method="POST">
+    <label for="titre"></label>
+    <input type="text" name="title" id="up_title" value="<?php echo $edit['title']; ?>"/>
+    <br/><br/>
 
-  <input type="text" name="title" value="<?php echo $edit['title']; ?>"/>
-  <input type="description" name="description" value="<?php echo $edit['description']; ?>"/>
-  <input type="hidden" name="id" value="<?php echo $edit['photo_id'];  ?>" />
-  <input type="submit" value="Edit"/>
+    <label for="description"></label>
+    <input type="description" id="up_description" name="description" value="<?php echo $edit['description']; ?>"/>
+    <input type="hidden" name="id" value="<?php echo $edit['photo_id']; ?>">
+    <input type="submit" value="Edit" id="up_button"/>
 
 
-  </form>
+    </form>
+
+
+
 </body>
 </html>
